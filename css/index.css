@@ -58,13 +58,14 @@ body {
 a {
 	font-family: 'IM Fell French Canon', serif;
 	color: #0FF;
-}
-a:hover {
 	font-style: italic;
 }
+a:hover {
+	font-style: normal;
+}
 a:active {
-	color: #FFF;
+	color: #FF0;
 }
 a:visited {
-	color: #FF0;
+	color: #FFF;
 }
