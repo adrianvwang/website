@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
         body {
             background-color: #000;
             margin: 0px;
@@ -29,10 +30,24 @@
         ::-moz-selection {
             background: #C67; /* Gecko Browsers */
         }
-	text {
-	    fill: rgba(0,0,0,0) !important;
-	    color: transparent !important;
-	}
+        text {
+            fill: rgba(0,0,0,0) !important;
+            color: transparent !important;
+        }
+        .copyright {
+            color: #C02;
+            position: absolute;
+            bottom: 1%;
+            right: 1.5vh;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 3vh;
+            text-transform: uppercase;
+        }
+        .barcode {
+            font-family: 'Libre Barcode 128 Text', Helvetica, Arial, sans-serif;
+            position: relative;
+            top: -0.5vh;
+        }
     </style>
 </head>
 <body>
@@ -74,5 +89,7 @@ return d}function e(e,i,r){var s,a=function(t){for(var e=0,i=s.length;e<i;){if(s
     anim = lottie.loadAnimation(params);
 
 </script>
+
+<div class="copyright">&copy; <span class="barcode">2018 Adrian V Wang</span></div>
 </body>
 </html>
